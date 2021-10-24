@@ -2,4 +2,13 @@
 　cd darknet
 　sh camera_darknet.sh
 2.撮影した写真から判断してその画像に人が含まれるかどうか判別する。
+import RPi.GPIO as GPIO
+from time
+
+GPIO.setmode (GPIO.BCM)
+GPIO.setup (3, GPIO.OUT)
+
+while True:
+　else:
+GPIO.cleanup ()
 3.写真に含まれる人数が2人以上の場合、ブザーが鳴る。
