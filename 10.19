@@ -9,6 +9,8 @@ GPIO.setmode (GPIO.BCM)
 GPIO.setup (3, GPIO.OUT)
 
 while True:
+
 　else:
+ 
 GPIO.cleanup ()
 3.写真に含まれる人数が2人以上の場合、ブザーが鳴る。
