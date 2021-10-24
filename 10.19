@@ -1,7 +1,10 @@
 1.pythonに接続されたカメラが撮影する。
+2.撮影した写真から判断してその画像に人が含まれるかどうか判別する。
+3.写真に含まれる人数が2人以上の場合、ブザーが鳴る。
+
 　cd darknet
 　sh camera_darknet.sh
-2.撮影した写真から判断してその画像に人が含まれるかどうか判別する。
+
 import RPi.GPIO as GPIO
 from time
 
@@ -9,8 +12,14 @@ GPIO.setmode (GPIO.BCM)
 GPIO.setup (3, GPIO.OUT)
 
 while True:
-
+  camlog3.txt >= 2
+  pwm = GPIO.PWM(12.100)
+  pwm.start(100)
+  time.sleep(4)
+  pwm.stop()
+  break
 　else:
+ 　　 break
+    time.sleep (0.01)
  
 GPIO.cleanup ()
-3.写真に含まれる人数が2人以上の場合、ブザーが鳴る。
