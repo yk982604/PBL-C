@@ -2,18 +2,16 @@
 2.撮影した写真から判断してその画像に人が含まれるかどうか判別する。
 3.写真に含まれる人数が2人以上の場合、ブザーが鳴る。
 
-　cd darknet
-　sh camera_darknet.sh
-
 import RPi.GPIO as GPIO
-from time
+import time
 
 GPIO.setmode (GPIO.BCM)
 GPIO.setup (3, GPIO.OUT)
 
+camlog3.txt >= 2
+
 while True:
-  camlog3.txt >= 2
-  pwm = GPIO.PWM(12.100)
+  pwm = GPIO.PWM(3.100)
   pwm.start(100)
   time.sleep(4)
   pwm.stop()
